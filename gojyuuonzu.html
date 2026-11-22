@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>五十音图</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五十音图</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header class="header">
     <div class="header__inner">
-      <h1 class="logo">LOGO</h1>
+        <a href="index.html" class="logo-link">
+        <img src="logo.svg" alt="Xnihongo" class="logo-img">
+        </a>
       <nav class="nav">
         <a href="index.html">主页</a>
         <a href="gojyuuonzu.html" class="active">五十音图</a>
+        <a href="onkun.html">音读与训读</a>
+        <a href="jpsource.html">学习资源</a>
       </nav>
     </div>
   </header>
@@ -29,27 +37,71 @@
     </aside>
 
     <main class="content">
-      <h2 class="center">平假名</h2>
+      <h1 class="center">平假名</h1>
       <hr>
       <div class="photo-box">
         <img src="hiragana.jpg" alt="平假名">
       </div>
-      <article>注意：引用的图片中仅对现代假名进行了展示<br>
-        在上世纪四五十年代之前日语中还存在着ゐ、ゑ（对应片假名分别为ヰ、ヱ），二战时期左右停用
-      </article>
-      <h2 class="center" style="margin-top: 40px;">片假名</h2>
+      <p class="under">注意：引用的图片中仅对现代假名进行了展示</p>
+      <p>在上世纪四五十年代之前日语中还存在着ゐ（wi）、ゑ（we）这两个假名（对应片假名分别为ヰ、ヱ），二战时期左右停用</p>
+      <br><br><br>
+      
+      <h1 class="center">片假名</h1>
       <hr>
       <div class="photo-box">
         <img src="katakana.jpg" alt="片假名">
       </div>
-      <article>片假名主要用于对外来语的引用、对被强调语段的标记等用途，主要语感就是代表着表强调的引用
+      <p class="under">片假名主要用于对外来语的引用、对被强调语段的标记等用途，主要语感就是代表着表强调的引用
+        <br><br><br><br><br>
+      </p>
+      <section>
+        <h1 class="center">浊音与半浊音</h1>
+        <hr>
+        <p>可能有的学习者在学习时想用日语发现了这样一个问题：</p>
+        <p>自己的名字中含有带“b、z、d、g”等辅音（汉语中不送气音对应日语浊音），从而无法用基础假名拼写，那自己的名字还有没有办法用日语表示呢？</p>
+        <p>——有的！这就要引入一个新的概念浊音</p>
+        <p>我们通过在部分假名的右上角加两个类似顿点的标记来标记浊音</p>
+        <p style="margin-top: 35px;"><strong>加浊音后辅音的变化：</strong></p>
+        <ul>
+            <li>k&rArr;g</li>
+            <li>s&rArr;z</li>
+            <li>t&rArr;d</li>
+            <li>h&rArr;b</li>
+        </ul>
+        <p style="margin-top: 35px;">细心的读者会发现：欸？为什么“h”的浊音是“b”，那“p”呢？</p>
+        <p>这就引出了日语中的半浊音：</p>
+        <p  class="center"><strong>“h”的半浊音就是“p”</strong></p>
+        <p style="margin-top: 35px;">其标记方式就是在<span class="imp"><strong>は行（は、ひ、ふ、へ、ほ）</strong></span>右上角划上一个类似于句号的小圈</p>
+    </section>
+        <div class="photo-box">
+            <img src="dakuon.jpg" alt="浊音">
+        </div>
         <br><br><br><br>
-      </article>
+      <section>
+        <h1 class="center">拗音</h1>
+        <hr>
+        <p>日语是一个音节极致简约，而语法很规律严谨的语言。</p>
+        <p>尽管如此，无论如何，46个基本音（平片假名为一套发音体系）对于一个没有音调的语言来说实在是太少了...</p>
+        <p>所以在日语中存在一种可以将两个音“协调”地拼接在一起的方式——拗音</p>
+        <p style="margin-top: 35px;"><strong>拗音的拼接条件：</strong></p>
+        <ul>
+        <li>前一个假名为有辅音的（非あ、い、う、え、お）且以i为元音的假名</li>
+        <li>后一个假名为以y为辅音的や、ゆ、よ</li>
+        </ul>
+        <p style="margin-top: 35px;">这两条规则乍一看可能会令人有些不解，但倘若我们能够明白拗音的本质，理解这两条规则就变得自然而然了</p>
+        <p>你可以将拗音看作我们熟悉的汉语拼音中，那些中间有一个i作为过渡辅音的音节（bie nie qia...）因此，前音元音和后音辅音都一致为i（j）</p>
+        <p>更加专业的说法是：拗音即是<strong>硬颚化</strong>辅音与基础元音的音节组合（理不理解不重要）</p>
+        <p>需要强调的一点是：<span class="imp"><strong>现代日语中拗音第二个假名必须小写！！！</strong></span></p>
+      </section>
+      <div class="photo-box under">
+        <img src="youon.jpg" alt="拗音">
+      </div>
     </main>
   </div>
 
   <footer>
     <p><strong>本网站为非盈利性质、无政治属性的学术性质网站</strong></p>
+    <p>此页面所引用图像来自知乎用户“吾行君”（侵权删）</p>
   </footer>
 
 </body>
