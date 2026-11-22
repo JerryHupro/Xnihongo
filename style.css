@@ -1,0 +1,115 @@
+/* ===== 全局 ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+/* ===== Header：LOGO靠左，导航紧随，不居中 ===== */
+.header {
+  padding: 30px 20px;
+  background: #f0f0f0;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;          /* 你原本的间距，想紧点改32 */
+  max-width: 1400px;  /* 只防过宽，不居中 */
+  /* 关键：去掉 margin: 0 auto，保持左对齐 */
+}
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+.nav a {
+  margin-left: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 20px;
+  transition: all 0.2s;
+  font-size: 24px;
+}
+.nav a:hover {
+  background: rgb(40, 119, 215);
+  color: white;
+}
+/* 可选：当前页高亮 */
+.nav a.active {
+  background: rgb(40, 119, 215);
+  color: white;
+}
+
+/* ===== 页面主体 ===== */
+.page {
+  display: flex;
+  padding: 5px 20px;
+  gap: 24px;
+  flex: 1;
+  align-items: flex-start;
+}
+
+/* ===== 左侧目录 ===== */
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  background: #f7f7f7;
+  padding: 16px;
+  border-radius: 8px;
+}
+.sidebar ul {
+  padding-left: 20px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 右侧正文 ===== */
+.content {
+  flex: 1;
+  min-width: 0;
+  max-width: 1200px;   /* 正文不拉太宽 */
+  padding: 0 10px;
+}
+
+/* 五十音图图片框 */
+.photo-box {
+  width: 100%;
+  max-width: 1200px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 20px;        /* 标题和图片的距离 */
+}
+.photo-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== 主页欢迎区 ===== */
+.hero {
+  font-family: "SimHei";
+  max-width: 700px;
+  line-height: 1.8;
+}
+.center { text-align: center; margin: 0; }
+.seablue { color: rgb(40, 119, 215); }
+.imp { color: red; }
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 2px;
+  background: #333;
+  color: #fff;
+}
