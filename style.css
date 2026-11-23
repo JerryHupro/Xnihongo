@@ -17,6 +17,10 @@ h2 { font-size: 1.5rem; font-weight: 700; line-height: 1.4; }
 h3 { font-size: 1.2rem; font-weight: 700; line-height: 1.4; }
 p  { font-size: 1.2rem; margin-bottom: 0.5em; line-height: 1.0}
 small { font-size: 0.875rem; color: #666; }
+.catalog{ font-size: 1.0rem; }
+.example{ font-size: 1.5rem; }
+.normal{font-size: 1.2rem;}
+
 
 /* ===== Header：LOGO靠左，导航紧随，不居中 ===== */
 .header {
