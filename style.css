@@ -19,10 +19,11 @@ a:hover {
 
 /*字号*/
 body { font-size: 16px; line-height: 1.7; }
-h1 { font-size: 2rem; font-weight: 700; line-height: 1.3; }
-h2 { font-size: 1.5rem; font-weight: 700; line-height: 1.4; }
-h3 { font-size: 1.2rem; font-weight: 700; line-height: 1.4; }
+h1 { font-size: 3rem; font-weight: 700; line-height: 1.3; }
+h2 { font-size: 2rem; font-weight: 700; line-height: 1.4; }
+h3 { font-size: 1.5rem; font-weight: 700; line-height: 1.4; }
 p  { font-size: 1.2rem; margin-bottom: 0.5em; line-height: 1.0;}
+li{margin: 3px;}
 small { font-size: 0.95rem; color: #666; }
 .catalog{ font-size: 1.0rem; }
 .example{ font-size: 1.5rem; }
@@ -56,7 +57,7 @@ small { font-size: 0.95rem; color: #666; }
   color: #333;
   border-radius: 20px;
   transition: all 0.2s;
-  font-size: 24px;
+  font-size: 28px;
 }
 .nav a:hover {
   background: rgb(40, 119, 215);
@@ -71,7 +72,7 @@ small { font-size: 0.95rem; color: #666; }
 /* ===== 页面主体 ===== */
 .page {
   display: flex;
-  padding: 5px 20px;
+  padding: 5px 0px;
   gap: 24px;
   flex: 1;
   align-items: flex-start;
@@ -106,8 +107,9 @@ small { font-size: 0.95rem; color: #666; }
 .content {
   flex: 1;
   min-width: 0;
-  max-width: 1200px;   /* 正文不拉太宽 */
-  padding: 0 10px;
+  max-width: 95%;   /* 正文不拉太宽 */
+  padding: 0 40px 0 0;
+  text-align: left;
 }
 
 /* 五十音图图片框 */
@@ -128,7 +130,7 @@ small { font-size: 0.95rem; color: #666; }
 /* ===== 主页欢迎区 ===== */
 .hero {
   font-family: "SimHei";
-  max-width: 700px;
+  max-width: 90%;
   line-height: 1.8;
 }
 
