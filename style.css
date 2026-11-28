@@ -69,6 +69,11 @@ small { font-size: 0.95rem; color: #666; }
   color: white;
 }
 
+.sidebar a.active{
+  background: #7EC8E3;
+  color: #E58BA8;
+}
+
 /* ===== 页面主体 ===== */
 .page {
   display: flex;
